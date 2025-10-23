@@ -76,7 +76,7 @@ public partial class TechDeskDbContext : DbContext
             entity.Property(e => e.Nome).HasMaxLength(120);
         });
 
-        modelBuilder.Entity<Chamado>(entity =>
+        modelBuilder.Entity<Chamado>(static entity =>
         {
             entity.HasKey(e => e.IdChamado);
 
@@ -113,7 +113,7 @@ public partial class TechDeskDbContext : DbContext
                 .HasForeignKey(d => d.IdTecnico)
                 .HasConstraintName("FK_Chamados_Tecnico");
 
-            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.Chamados)
+            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(static p => p.Chamados)
                 .HasForeignKey(d => d.IdUsuario)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Chamados_Usuario");

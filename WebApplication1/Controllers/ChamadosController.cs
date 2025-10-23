@@ -47,19 +47,42 @@ namespace TechDesk.Controllers
 
         // POST: api/Chamados
         [HttpPost]
-        public async Task<IActionResult> CriarChamado([FromBody] Chamado chamado)
+        public async Task<IActionResult> CriarChamado([FromBody] CreateChamadoDTO dto)
         {
-            if (chamado == null)
-                return BadRequest("Dados inválidos.");
+            if (dto == null)
+                return BadRequest("Os dados do chamado são obrigatórios.");
 
-            chamado.DataInicio = DateTime.UtcNow;
-            chamado.Status = "Aberto";
+            var usuario = await _context.Usuarios.FindAsync(dto.IdUsuario);
+            if (usuario == null) return BadRequest("Usuário não encontrado.");
+
+            var categoria = await _context.Categorias.FindAsync(dto.IdCategoria);
+            if (categoria == null) return BadRequest("Categoria não encontrada.");
+
+            if (dto.IdTecnico.HasValue)
+            {
+                var tecnico = await _context.Tecnicos.FindAsync(dto.IdTecnico.Value);
+                if (tecnico == null) return BadRequest("Técnico não encontrado.");
+            }
+
+            var chamado = new Chamado
+            {
+                Titulo = dto.Titulo,
+                Descricao = dto.Descricao,
+                Prioridade = dto.Prioridade,
+                Status = "Aberto",
+                DataInicio = DateTime.UtcNow,
+                IdUsuario = dto.IdUsuario,
+                IdCategoria = dto.IdCategoria,
+                IdTecnico = dto.IdTecnico,
+                Nivel = dto.Nivel // "N1", "N2" ou "N3"
+            };
 
             _context.Chamados.Add(chamado);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetChamadoPorId), new { id = chamado.IdChamado }, chamado);
         }
+
 
         // PUT: api/Chamados/{id}
         [HttpPut("{id}")]

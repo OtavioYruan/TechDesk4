@@ -24,13 +24,30 @@ namespace TechDesk.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CriarCategoria([FromBody] Categoria categoria)
+        public async Task<IActionResult> CriarCategoria([FromBody] CadastroCategoriaDto dto)
         {
+            if (dto == null)
+                return BadRequest("Dados inválidos.");
+
+            var categoria = new Categoria
+            {
+                Nome = dto.Nome,
+                Descricao = dto.Descricao,
+                Ativa = dto.Ativa
+            };
+
             _context.Categorias.Add(categoria);
             await _context.SaveChangesAsync();
 
-            return Ok(categoria);
+            return Ok(new
+            {
+                categoria.IdCategoria,
+                categoria.Nome,
+                categoria.Descricao,
+                categoria.Ativa
+            });
         }
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategoriaPorId(int id)

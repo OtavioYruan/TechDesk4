@@ -35,22 +35,43 @@ namespace TechDesk.Controllers
             return Ok(tecnico);
         }
 
-        // ✅ POST /api/Tecnicos
+        // POST /api/Tecnicos
         [HttpPost]
-        public async Task<ActionResult<Tecnico>> Create([FromBody] Tecnico novoTecnico)
+        public async Task<ActionResult> Create([FromBody] CadastroTecnicoDTO dto)
         {
-            if (novoTecnico == null)
-                return BadRequest("Dados inválidos.");
+            if (dto == null || string.IsNullOrWhiteSpace(dto.Email) || string.IsNullOrWhiteSpace(dto.Nome))
+                return BadRequest("Informe nome e e-mail do técnico.");
 
-            novoTecnico.CriadoEm = DateTime.UtcNow;
-            novoTecnico.Ativo = true;
-            novoTecnico.Perfil ??= "Técnico";
+            // Verifica se já existe técnico com o mesmo e-mail
+            bool emailExiste = await _context.Tecnicos.AnyAsync(t => t.Email == dto.Email);
+            if (emailExiste)
+                return Conflict("E-mail já cadastrado.");
+
+            var novoTecnico = new Tecnico
+            {
+                Nome = dto.Nome.Trim(),
+                Email = dto.Email.Trim(),
+                SenhaHash = dto.SenhaHash,
+                Perfil = dto.Perfil ?? "Técnico",
+                Especialidade = dto.Especialidade,
+                Nivel = dto.Nivel,
+                CodigoEmpresa = dto.CodigoEmpresa,
+                Ativo = dto.Ativo,
+                CriadoEm = DateTime.UtcNow
+            };
 
             _context.Tecnicos.Add(novoTecnico);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = novoTecnico.Id }, novoTecnico);
+            return CreatedAtAction(nameof(GetById), new { id = novoTecnico.Id }, new
+            {
+                novoTecnico.Id,
+                novoTecnico.Nome,
+                novoTecnico.Email,
+                novoTecnico.Perfil
+            });
         }
+
 
         // ✅ PUT /api/Tecnicos/{id}
         [HttpPut("{id:int}")]
