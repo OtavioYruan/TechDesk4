@@ -7,10 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
-{
-options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
-});
-https://aka.ms/aspnetcore/swashbuckle
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    });
+
+// https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -22,7 +23,8 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-builder.Services.AddDbContext<TechDeskDbContext>(options => options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TechDeskDB;Integrated Security=true;"));
+builder.Services.AddDbContext<TechDeskDbContext>(options =>
+    options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TechDeskDB;Integrated Security=true;"));
 
 var app = builder.Build();
 

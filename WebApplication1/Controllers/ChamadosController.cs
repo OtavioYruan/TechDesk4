@@ -16,7 +16,7 @@ namespace TechDesk.Controllers
             _context = context;
         }
 
-        // GET: api/Chamados
+        // 🔹 GET: api/Chamados
         [HttpGet]
         public async Task<IActionResult> GetChamados()
         {
@@ -24,12 +24,26 @@ namespace TechDesk.Controllers
                 .Include(c => c.IdCategoriaNavigation)
                 .Include(c => c.IdUsuarioNavigation)
                 .Include(c => c.IdTecnicoNavigation)
+                .Select(c => new
+                {
+                    c.IdChamado,
+                    c.Titulo,
+                    c.Descricao,
+                    c.Prioridade,
+                    c.Status,
+                    c.Nivel,
+                    c.DataInicio,
+                    c.DataFinal,
+                    UsuarioNome = c.IdUsuarioNavigation != null ? c.IdUsuarioNavigation.Nome : null,
+                    CategoriaNome = c.IdCategoriaNavigation != null ? c.IdCategoriaNavigation.Nome : null,
+                    TecnicoNome = c.IdTecnicoNavigation != null ? c.IdTecnicoNavigation.Nome : null
+                })
                 .ToListAsync();
 
             return Ok(chamados);
         }
 
-        // GET: api/Chamados/{id}
+        // 🔹 GET: api/Chamados/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetChamadoPorId(int id)
         {
@@ -37,7 +51,22 @@ namespace TechDesk.Controllers
                 .Include(c => c.IdCategoriaNavigation)
                 .Include(c => c.IdUsuarioNavigation)
                 .Include(c => c.IdTecnicoNavigation)
-                .FirstOrDefaultAsync(c => c.IdChamado == id);
+                .Where(c => c.IdChamado == id)
+                .Select(c => new
+                {
+                    c.IdChamado,
+                    c.Titulo,
+                    c.Descricao,
+                    c.Prioridade,
+                    c.Status,
+                    c.Nivel,
+                    c.DataInicio,
+                    c.DataFinal,
+                    UsuarioNome = c.IdUsuarioNavigation != null ? c.IdUsuarioNavigation.Nome : null,
+                    CategoriaNome = c.IdCategoriaNavigation != null ? c.IdCategoriaNavigation.Nome : null,
+                    TecnicoNome = c.IdTecnicoNavigation != null ? c.IdTecnicoNavigation.Nome : null
+                })
+                .FirstOrDefaultAsync();
 
             if (chamado == null)
                 return NotFound("Chamado não encontrado.");
@@ -45,7 +74,7 @@ namespace TechDesk.Controllers
             return Ok(chamado);
         }
 
-        // POST: api/Chamados
+        // 🔹 POST: api/Chamados
         [HttpPost]
         public async Task<IActionResult> CriarChamado([FromBody] CreateChamadoDTO dto)
         {
@@ -58,11 +87,9 @@ namespace TechDesk.Controllers
             var categoria = await _context.Categorias.FindAsync(dto.IdCategoria);
             if (categoria == null) return BadRequest("Categoria não encontrada.");
 
-            if (dto.IdTecnico.HasValue)
-            {
-                var tecnico = await _context.Tecnicos.FindAsync(dto.IdTecnico.Value);
-                if (tecnico == null) return BadRequest("Técnico não encontrado.");
-            }
+            var tecnico = await _context.Tecnicos.FindAsync(dto.IdTecnico);
+            if (dto.IdTecnico.HasValue && tecnico == null)
+                return BadRequest("Técnico não encontrado.");
 
             var chamado = new Chamado
             {
@@ -74,38 +101,74 @@ namespace TechDesk.Controllers
                 IdUsuario = dto.IdUsuario,
                 IdCategoria = dto.IdCategoria,
                 IdTecnico = dto.IdTecnico,
-                Nivel = dto.Nivel // "N1", "N2" ou "N3"
+                Nivel = dto.Nivel
             };
 
             _context.Chamados.Add(chamado);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetChamadoPorId), new { id = chamado.IdChamado }, chamado);
+            // Retorno formatado igual ao GET
+            var retorno = new
+            {
+                chamado.IdChamado,
+                chamado.Titulo,
+                chamado.Descricao,
+                chamado.Prioridade,
+                chamado.Status,
+                chamado.Nivel,
+                chamado.DataInicio,
+                chamado.DataFinal,
+                UsuarioNome = usuario.Nome,
+                CategoriaNome = categoria.Nome,
+                TecnicoNome = tecnico?.Nome
+            };
+
+            return CreatedAtAction(nameof(GetChamadoPorId), new { id = chamado.IdChamado }, retorno);
         }
 
-
-        // PUT: api/Chamados/{id}
+        // 🔹 PUT: api/Chamados/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> AtualizarChamado(int id, [FromBody] Chamado chamadoAtualizado)
+        public async Task<IActionResult> AtualizarChamado(int id, [FromBody] UpdateChamadoDTO dto)
         {
             var chamado = await _context.Chamados.FirstOrDefaultAsync(c => c.IdChamado == id);
             if (chamado == null)
                 return NotFound("Chamado não encontrado.");
 
-            chamado.Titulo = chamadoAtualizado.Titulo;
-            chamado.Descricao = chamadoAtualizado.Descricao;
-            chamado.Status = chamadoAtualizado.Status;
-            chamado.Prioridade = chamadoAtualizado.Prioridade;
-            chamado.IdTecnico = chamadoAtualizado.IdTecnico;
-            chamado.IdCategoria = chamadoAtualizado.IdCategoria;
-            chamado.Nivel = chamadoAtualizado.Nivel;
-            chamado.DataFinal = chamadoAtualizado.DataFinal;
+            chamado.Titulo = dto.Titulo;
+            chamado.Descricao = dto.Descricao;
+            chamado.Status = dto.Status;
+            chamado.Prioridade = dto.Prioridade;
+            chamado.IdUsuario = dto.IdUsuario;
+            chamado.IdCategoria = dto.IdCategoria;
+            chamado.IdTecnico = dto.IdTecnico;
+            chamado.Nivel = dto.Nivel;
+            chamado.DataFinal = dto.DataFinal;
 
             await _context.SaveChangesAsync();
-            return Ok(chamado);
+
+            var usuario = await _context.Usuarios.FindAsync(dto.IdUsuario);
+            var categoria = await _context.Categorias.FindAsync(dto.IdCategoria);
+            var tecnico = await _context.Tecnicos.FindAsync(dto.IdTecnico);
+
+            var retorno = new
+            {
+                chamado.IdChamado,
+                chamado.Titulo,
+                chamado.Descricao,
+                chamado.Prioridade,
+                chamado.Status,
+                chamado.Nivel,
+                chamado.DataInicio,
+                chamado.DataFinal,
+                UsuarioNome = usuario?.Nome,
+                CategoriaNome = categoria?.Nome,
+                TecnicoNome = tecnico?.Nome
+            };
+
+            return Ok(retorno);
         }
 
-        // DELETE: api/Chamados/{id}
+        // 🔹 DELETE: api/Chamados/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletarChamado(int id)
         {
@@ -115,19 +178,8 @@ namespace TechDesk.Controllers
 
             _context.Chamados.Remove(chamado);
             await _context.SaveChangesAsync();
+
             return NoContent();
-        }
-
-        // GET: api/Chamados/{id}/historico
-        [HttpGet("{id}/historico")]
-        public async Task<IActionResult> GetHistoricoPorChamado(int id)
-        {
-            var historico = await _context.HistoricoChamados
-                .Where(h => h.IdChamado == id)
-                .OrderByDescending(h => h.Data)
-                .ToListAsync();
-
-            return Ok(historico);
         }
     }
 }
