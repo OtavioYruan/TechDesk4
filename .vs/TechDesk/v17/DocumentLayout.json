@@ -1,0 +1,297 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\updateusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\updateusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\createmensagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\createmensagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\controllers\\mensagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\controllers\\mensagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\controllers\\chamadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\controllers\\chamadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\historicochamadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\historicochamadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\historicochamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\historicochamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\feedbackatendimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\feedbackatendimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\feedbackdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\feedbackdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\createhistoricodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\createhistoricodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\controllers\\historicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\controllers\\historicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\chamadolistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\chamadolistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|c:\\users\\yruan\\onedrive\\\u00E1rea de trabalho\\projetotechdesk\\webapplication1\\models\\createchamadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8DA1A6-3FE0-494C-A295-3B5B755704F0}|WebApplication1\\TechDesk.csproj|solutionrelative:webapplication1\\models\\createchamadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\UpdateUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\UpdateUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\UpdateUsuarioDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\UpdateUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T23:53:35.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\UsuarioDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T23:30:00.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAH4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:50:15.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MensagemController.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\MensagemController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\MensagemController.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\MensagemController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\MensagemController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:47:47.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HistoricoChamadoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\HistoricoChamadoDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\HistoricoChamadoDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\HistoricoChamadoDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\HistoricoChamadoDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T21:21:05.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HistoricoChamado.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\HistoricoChamado.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\HistoricoChamado.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\HistoricoChamado.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\HistoricoChamado.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T21:11:49.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateMensagemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\CreateMensagemDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\CreateMensagemDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\CreateMensagemDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\CreateMensagemDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:49:52.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\CreateUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\CreateUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\CreateUsuarioDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\CreateUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:49:33.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChamadosController.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\ChamadosController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ChamadosController.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\ChamadosController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\ChamadosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T22:47:59.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FeedbackDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\FeedbackDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\FeedbackDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\FeedbackDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\FeedbackDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:03:12.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAFcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:05:08.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FeedbackAtendimento.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\FeedbackAtendimento.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\FeedbackAtendimento.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\FeedbackAtendimento.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\FeedbackAtendimento.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:15:19.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateHistoricoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\CreateHistoricoDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\CreateHistoricoDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\CreateHistoricoDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\CreateHistoricoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T22:39:38.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HistoricoController.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\HistoricoController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HistoricoController.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Controllers\\HistoricoController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HistoricoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T21:23:00.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChamadoListDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\ChamadoListDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\ChamadoListDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\ChamadoListDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\ChamadoListDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T22:52:55.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Chamado.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\Chamado.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Chamado.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\Chamado.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Chamado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T20:46:00.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateChamadoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\CreateChamadoDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\CreateChamadoDTO.cs",
+              "ToolTip": "C:\\Users\\yruan\\OneDrive\\\u00C1rea de Trabalho\\ProjetoTechDesk\\WebApplication1\\Models\\CreateChamadoDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\CreateChamadoDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:48:55.165Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
